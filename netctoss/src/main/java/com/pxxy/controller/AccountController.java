@@ -26,8 +26,6 @@ public class AccountController {
         List<Account> accounts = accountService.findAll();
         for (Account account : accounts){
             System.out.println(account);
-            System.out.println("1213");
-            System.out.println("account = " + account);
         }
         return "list";
     }
