@@ -27,6 +27,10 @@ public class AccountController {
         for (Account account : accounts){
             System.out.println(account);
             System.out.println("account = " + account);
+            System.out.println("account = " + account);
+            System.out.println("account = " + account);
+            System.out.println("account = " + account);
+            System.out.println("account = " + account);
         }
         return "list";
     }

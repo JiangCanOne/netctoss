@@ -8,7 +8,6 @@
   <component name="ChangeListManager">
     <list default="true" id="585b23e6-536d-4297-adf0-1c4c11fb0f59" name="Default Changelist" comment="ok">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/pxxy/controller/AccountController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pxxy/controller/AccountController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/META-INF/netctoss.kotlin_module" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pxxy/controller/AccountController.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/pxxy/controller/AdministorController.class" beforeDir="false" />
@@ -172,8 +171,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/pxxy/controller/AccountController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+            <state relative-caret-position="250">
+              <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
             </state>
           </provider>
         </entry>
@@ -558,7 +557,7 @@
       <workItem from="1559101784317" duration="1422000" />
       <workItem from="1559111565466" duration="2664000" />
       <workItem from="1559117411013" duration="1992000" />
-      <workItem from="1559121173731" duration="1732000" />
+      <workItem from="1559121173731" duration="1771000" />
     </task>
     <task id="LOCAL-00001" summary="ok">
       <created>1559119066797</created>
@@ -588,7 +587,14 @@
       <option name="project" value="LOCAL" />
       <updated>1559122866376</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ok">
+      <created>1559122937456</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1559122937456</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -597,7 +603,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19323000" />
+    <option name="totallyTimeSpent" value="19362000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -1229,8 +1235,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/pxxy/controller/AccountController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="28" column="55" selection-start-line="28" selection-start-column="55" selection-end-line="28" selection-end-column="55" />
+        <state relative-caret-position="250">
+          <caret line="32" column="55" selection-start-line="32" selection-start-column="55" selection-end-line="32" selection-end-column="55" />
         </state>
       </provider>
     </entry>
