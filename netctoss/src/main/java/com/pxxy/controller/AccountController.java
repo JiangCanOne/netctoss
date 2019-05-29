@@ -31,6 +31,12 @@ public class AccountController {
             System.out.println("account = " + account);
             System.out.println("account = " + account);
             System.out.println("account = " + account);
+            System.out.println("account = " + account);
+            System.out.println("account = " + account);
+            System.out.println("account = " + account);
+            System.out.println("account = " + account);
+            System.out.println("account = " + account);
+            System.out.println("account = " + account);
         }
         return "list";
     }
