@@ -1,6 +1,6 @@
 package com.pxxy.domain;
 
-import java.util.Date;
+import java.sql.Date;
 
 /**
  * @Descricption:账户业务的实体类

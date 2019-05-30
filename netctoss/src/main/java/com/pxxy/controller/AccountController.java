@@ -1,6 +1,7 @@
 package com.pxxy.controller;
 
 import com.pxxy.domain.Account;
+import com.pxxy.domain.PageBean;
 import com.pxxy.service.IAccountService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -26,19 +27,20 @@ public class AccountController {
         List<Account> accounts = accountService.findAll();
         for (Account account : accounts){
             System.out.println(account);
-            System.out.println("account = " + account);
-            System.out.println("account = " + account);
-            System.out.println("account = " + account);
-            System.out.println("account = " + account);
-            System.out.println("account = " + account);
-            System.out.println("account = " + account);
-            System.out.println("account = " + account);
-            System.out.println("account = " + account);
-            System.out.println("account = " + account);
-            System.out.println("account = " + account);
-            System.out.println("account = " + account);
         }
         return "list";
+    }
+
+    /**
+     * 按页码查询
+     */
+    @RequestMapping("/findByPage")
+    public String findByPage(int currentPage){
+       PageBean<Account> accounts = accountService.findByPage(currentPage);
+       for (Account account : accounts.getLists()){
+           System.out.println(account);
+       }
+       return "success";
     }
 
 }

@@ -5,6 +5,7 @@ import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Repository;
 
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -29,4 +30,14 @@ public interface AccountMapper {
      * 更新账户
      */
     int updateAccount(Account account);
+    /**
+     * 查询帐户记录总数
+     */
+    int selectCount();
+    /**
+     * 根据分页数据start 和size查询数据
+     * @param map
+     * @return
+     */
+    List<Account> findByPage(HashMap<String,Object> map);
 }

@@ -1,7 +1,7 @@
 package com.pxxy.domain;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.sql.Date;
 import java.util.List;
 /**
  * @Descricption:账户的实体类

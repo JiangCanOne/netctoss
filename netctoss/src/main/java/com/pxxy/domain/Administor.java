@@ -3,7 +3,7 @@ package com.pxxy.domain;
 import sun.security.util.Password;
 
 import java.io.Serializable;
-import java.util.Date;
+import java.sql.Date;
 import java.util.List;
 
 /**
