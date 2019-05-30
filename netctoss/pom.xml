@@ -31,7 +31,6 @@
             <artifactId>aspectjweaver</artifactId>
             <version>1.6.8</version>
         </dependency>
-
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-aop</artifactId>
@@ -159,8 +158,6 @@
             <groupId>c3p0</groupId>
             <artifactId>c3p0</artifactId>
             <version>0.9.1.2</version>
-            <type>jar</type>
-            <scope>compile</scope>
         </dependency>
 
         <!--工具包-->
@@ -175,7 +172,6 @@
             <version>1.9.1</version>
         </dependency>
     </dependencies>
-
     <build>
         <finalName>ssm</finalName>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
@@ -211,21 +207,6 @@
                 </plugin>
             </plugins>
         </pluginManagement>
-
-
-
-        <plugins>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <configuration>
-                    <skip>true</skip>
-                </configuration>
-            </plugin>
-        </plugins>
-
-
-
 
         <resources>
             <resource>
