@@ -41,6 +41,11 @@
             limit #{start},#{size}
         </if>
     </select>
+    <!--使用分页助手分页-->
+    <select id="selectByPageAndSelections" resultMap="accountMap">
+        SELECT *
+        FROM account
+    </select>
     <!--更新用户-->
     <update id="updateAccount" parameterType="account">
         update account set name=#{name},money=#{money} where id = #{id}

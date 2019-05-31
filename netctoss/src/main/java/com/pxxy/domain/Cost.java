@@ -15,7 +15,7 @@ public class Cost implements Serializable {
     private Float baseDuration;//资费基本时长
     private Double baseCost;//基本费用
     private Double unitCost;//单位费用
-    private String status;//该资费的状态，0启用，-1暂停
+    private Integer status;//该资费的状态，0启用，1暂停，2删除
     private String descr;//对该资费的一个大致描述
     private Date createTime;
     private Date startTime;//表示该资费最新的启用时间
@@ -67,11 +67,11 @@ public class Cost implements Serializable {
         this.unitCost = unitCost;
     }
 
-    public String getStatus() {
+    public Integer getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(Integer status) {
         this.status = status;
     }
 

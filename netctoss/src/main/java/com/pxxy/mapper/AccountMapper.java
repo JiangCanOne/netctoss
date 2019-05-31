@@ -40,4 +40,10 @@ public interface AccountMapper {
      * @return
      */
     List<Account> findByPage(HashMap<String,Object> map);
+    /**
+     * 根据分页分页助手查询数据
+     * @param
+     * @return
+     */
+    List<Account> selectByPageAndSelections();
 }

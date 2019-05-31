@@ -19,6 +19,7 @@ public class Administor implements Serializable {
     private String telephone;
     private String email;
     private Date createTime;
+    private Integer status;//管理员的状态,0正常,2删除
 
     //管理员所拥有的角色，映射关系：多对多
     private List<Role> roles;
@@ -87,6 +88,14 @@ public class Administor implements Serializable {
         this.roles = roles;
     }
 
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
     @Override
     public String toString() {
         return "Administor{" +
@@ -97,6 +106,7 @@ public class Administor implements Serializable {
                 ", telephone='" + telephone + '\'' +
                 ", email='" + email + '\'' +
                 ", createTime=" + createTime +
+                ", status=" + status +
                 ", roles=" + roles +
                 '}';
     }

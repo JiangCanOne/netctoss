@@ -1,5 +1,6 @@
 package com.pxxy.controller;
 
+import com.github.pagehelper.PageInfo;
 import com.pxxy.domain.Account;
 import com.pxxy.domain.PageBean;
 import com.pxxy.service.IAccountService;
@@ -8,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import java.util.List;
+import java.util.logging.Logger;
 
 /**
  * 账户的表现层
@@ -36,11 +38,23 @@ public class AccountController {
      */
     @RequestMapping("/findByPage")
     public String findByPage(int currentPage){
-       PageBean<Account> accounts = accountService.findByPage(currentPage);
-       for (Account account : accounts.getLists()){
-           System.out.println(account);
-       }
-       return "success";
+        PageBean<Account> accounts = accountService.findByPage(currentPage);
+        for (Account account : accounts.getLists()){
+            System.out.println(account);
+        }
+        return "success";
+    }
+    /**
+     * 按页码查询,使用分页助手
+     */
+    @RequestMapping("/findByPageHelper")
+    public String findByPageHelper(int currentPage){
+        PageInfo<Account> accounts = accountService.findByPageHelper(currentPage,10);
+        System.out.println("分页助手");
+        for (Account account : accounts.getList()){
+            System.out.println(account);
+        }
+        return "success";
     }
 
 }

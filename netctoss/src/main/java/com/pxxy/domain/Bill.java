@@ -1,6 +1,8 @@
 package com.pxxy.domain;
 
 import java.io.Serializable;
+import java.util.Date;
+
 /**
  * @Descricption:账单的实体类
  * @Author:江灿
@@ -13,6 +15,7 @@ public class Bill implements Serializable {
     private String payway;//表示该账单的支付方式，1现金，2微信支付，3支付宝，4网银转账
     private String status;//该账单的状态，0已支付，1未支付
     private String charge;//该账单对应的cost表中的费用
+    private Date createTime;//账单的生成时间
 
     //账单所属的账户，映射关系：多对一
     private Account account;
@@ -74,7 +77,13 @@ public class Bill implements Serializable {
         this.account = account;
     }
 
+    public Date getCreateTime() {
+        return createTime;
+    }
 
+    public void setCreateTime(Date createTime) {
+        this.createTime = createTime;
+    }
 
     @Override
     public String toString() {
@@ -85,6 +94,7 @@ public class Bill implements Serializable {
                 ", payway='" + payway + '\'' +
                 ", status='" + status + '\'' +
                 ", charge='" + charge + '\'' +
+                ", createTime=" + createTime +
                 ", account=" + account +
                 '}';
     }

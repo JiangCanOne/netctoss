@@ -1,5 +1,6 @@
 package com.pxxy.service;
 
+import com.github.pagehelper.PageInfo;
 import com.pxxy.domain.Account;
 import com.pxxy.domain.PageBean;
 
@@ -30,4 +31,8 @@ public interface IAccountService {
      * 根据页码查询记录数
      */
     PageBean<Account> findByPage(int currentPage);
+    /**
+     * 根据页码查询记录数,使用分页助手
+     */
+    PageInfo<Account> findByPageHelper(int currentPage, int size);
 }

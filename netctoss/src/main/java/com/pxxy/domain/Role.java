@@ -15,7 +15,7 @@ public class Role implements Serializable {
     private List<Module> modules;
 
     //角色所属的管理员,映射关系：多对多
-    private List<Account> accounts;
+    private List<Administor> administors;
 
     public Integer getRoleId() {
         return roleId;
@@ -41,12 +41,12 @@ public class Role implements Serializable {
         this.modules = modules;
     }
 
-    public List<Account> getAccounts() {
-        return accounts;
+    public List<Administor> getAdministors() {
+        return administors;
     }
 
-    public void setAccounts(List<Account> accounts) {
-        this.accounts = accounts;
+    public void setAdministors(List<Administor> administors) {
+        this.administors = administors;
     }
 
     @Override
@@ -55,7 +55,7 @@ public class Role implements Serializable {
                 "roleId=" + roleId +
                 ", name='" + name + '\'' +
                 ", modules=" + modules +
-                ", accounts=" + accounts +
+                ", administors=" + administors +
                 '}';
     }
 }

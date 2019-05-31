@@ -13,7 +13,7 @@ public class Service {
     private Integer costId;
     private String serviceName;//登录服务器的账号,即业务账号
     private String servicePassword;//登录服务器的密码
-    private String status;//表示该业务账号的状态，0开通，1暂停
+    private Integer status;//表示该业务的状态，0开通,1暂停,2删除
     private String unixHost;//服务器的ip地址
     private Date createTime;//该业务账号创建的时间
     //业务账号所属的账户,映射关系：一对一
@@ -61,11 +61,11 @@ public class Service {
         this.servicePassword = servicePassword;
     }
 
-    public String getStatus() {
+    public Integer getStatus() {
         return status;
     }
 
-    public void setStatus(String status) {
+    public void setStatus(Integer status) {
         this.status = status;
     }
 

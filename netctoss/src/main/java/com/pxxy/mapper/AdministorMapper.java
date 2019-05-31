@@ -1,5 +1,7 @@
 package com.pxxy.mapper;
 
+import com.pxxy.domain.Account;
+import com.pxxy.domain.Administor;
 import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
@@ -10,4 +12,12 @@ import org.springframework.stereotype.Service;
  */
 @Repository()
 public interface AdministorMapper {
+    /*
+     * @Author:江灿
+     * @Description:根据管理员登录账号查询
+     * @Date: 17:16 2019/5/30
+     * @Param: [adminNumber]
+     * @return: com.pxxy.domain.Administor
+     **/
+    Administor findByAdminNumber(String adminNumber);
 }
