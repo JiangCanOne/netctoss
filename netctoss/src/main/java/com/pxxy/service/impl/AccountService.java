@@ -81,6 +81,8 @@ public class AccountService implements IAccountService {
         PageHelper.startPage(currentPage,size);
         List<Account> accounts = accountMapper.selectByPageAndSelections();
         PageInfo<Account> pageInfo = new PageInfo<>(accounts);
+        System.out.println(pageInfo);
+        System.out.println(pageInfo.getPages());
         return pageInfo;
     }
 }

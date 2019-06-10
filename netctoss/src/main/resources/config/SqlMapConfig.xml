@@ -27,6 +27,8 @@
     <mappers>
         <mapper resource="mappers/AccountMapper.xml"/>
         <mapper resource="mappers/AdministorMapper.xml"/>
+        <mapper resource="mappers/RoleMapper.xml"/>
+        <mapper resource="mappers/ModuleMapper.xml"/>
     </mappers>
 
 
